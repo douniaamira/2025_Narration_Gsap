@@ -90,11 +90,16 @@ p{
     flex-direction:row;
     align-items: center;
 }
-#key {
-    width:300px;
-  
-    
+
+#nefertiti{
+   position: absolute;
+ left: -3%;
+  top: 50%;
+  width: 200px;
+  object-fit: contain;
+
 }
+
 
 /****annimation***/
 @keyframes section {
@@ -104,3 +109,5 @@ p{
     75%{transform: translateX(50px);}
     100%{transform:translateX(0px);}
 }
+
+/*media
