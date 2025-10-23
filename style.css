@@ -8,6 +8,11 @@ body{
     overflow-x: hidden;
 }
 
+h2{
+     font-family: "Eagle Lake", serif;
+      font-size:30px;
+}
+    
 
 
 .video{
@@ -99,7 +104,11 @@ p{
   object-fit: contain;
 
 }
-
+#monuments{
+    background-image: url(egypte/image/background.png);
+    height:100vh ;
+    width: 100vw;
+}
 
 /****annimation***/
 @keyframes section {
