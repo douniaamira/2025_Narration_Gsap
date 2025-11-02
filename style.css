@@ -8,13 +8,14 @@ body{
     overflow-x: hidden;
 }
 
-h2{
+h2,h3{
      font-family: "Eagle Lake", serif;
-      font-size:30px;
+      font-size:50px;
+      text-shadow: 2px 2px 2px black;
 }
     
 
-
+/*section1*/
 .video{
     position:absolute;
     top:0;
@@ -52,7 +53,7 @@ h2{
 
 /* Section 2 ------------------- */
 #section2{
-    background-image: url("egypte/image/Background_section1.png");
+    background-image: url("egypte/image/Background1.png");
     min-height:60vh;
     width: 100vw;
 
@@ -104,12 +105,129 @@ p{
   object-fit: contain;
 
 }
+/*section3*/
 #monuments{
-    background-image: url(egypte/image/background.png);
-    height:100vh ;
-    width: 100vw;
+   background-image:url(egypte/image/background3.jpeg);
+   background-attachment: fixed;
+   background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    
+}
+#section3__text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#section3__image{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap:10px;
+}
+#pyramides {
+    margin: 20px;
+    width: 300px;
+    min-height: 200px;
+    border-radius: 10px;
+    border: solid 2px black;
+
+}
+#sphinx {
+     margin: 20px;
+    width: 300px;
+    min-height: 200px;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+#luxor {
+     margin: 20px;
+    width: 300px;
+    min-height: 200px;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+#ali {
+     margin: 20px;
+    width: 300px;
+    min-height: 200px;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+/*section4*/
+#plats {
+  position: relative;
+  height: 90vh;                
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content:center; 
+  background-color: #f4f1ed;
+  overflow: hidden;
+  padding-top: 20px;     
+}      
+
+#section4__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+  
 }
 
+#section4__image {
+  display: flex;
+  width: 400%;               
+  height: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.culinaire {
+  width: 100vw;
+  height: 100%;
+  object-fit: contain;          
+  display: block;
+}
+#holiday{
+ background: linear-gradient(135deg, #ffdd00, #f4a261, #2a9d8f, #264653);
+padding:30px;
+    
+    
+}
+/*section5*/
+#Vacances{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:100px;
+}
+.destination1{
+    border-radius: 15px;
+    box-shadow: 10px 8px 70px black;
+    overflow:hidden;
+    width: 310px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    }
+#caire__image,#hurghada__image,#sharm__image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+#section5__titre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding:40px;
+}
 /****annimation***/
 @keyframes section {
     0%{transform:translateX(0px);}
@@ -119,4 +237,141 @@ p{
     100%{transform:translateX(0px);}
 }
 
-/*media
+/*Media Queries ***/
+@media(max-width:430px)/**Pour le 430 source GOOGLE****/{
+    #section1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        gap:20px;
+    }
+    #title{
+        font-size: 32px;
+    }
+   .video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+   }
+   #section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  #section2__text {
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  #titre2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  #nefertiti {
+    position: static;
+    width: 70%;
+    max-width: 250px;
+    margin-top: 20px;
+    z-index: 5;
+  }
+
+  #imageeg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  #monuments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  gap: 20px;
+}
+#section3__text{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+#section3__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 90%;
+  max-width: 200px;
+  height: auto;
+  overflow: visible;
+  object-fit: cover;
+
+}
+#plats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  gap: 25px;
+  height: auto;
+}
+#section4__text{
+    font-size:32px;
+    margin-bottom: 15px;
+}
+#section4__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.culinaire {
+  width: 70%;
+  max-width: 280px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#holiday {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  gap: 30px;
+}
+
+#section5__titre {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#Vacances {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.destination1 {
+  width: 90%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#caire__image,#hurghada__image,#sharm__image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}}
