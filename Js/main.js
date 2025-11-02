@@ -16,7 +16,7 @@ Draggable.create("#nefertiti",{
       trigger: "#section2",
       start: "top 60%",
       end:'top 20%',
-      markers:true,
+      /**markers:true**/
       toggleActions:  "play none none none",
       scrub:1,
     },
